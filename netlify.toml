@@ -1,0 +1,18 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Redirecciones para SPA (React)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Cache de las imágenes durante 1 año (mejora rendimiento)
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

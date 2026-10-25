@@ -1,0 +1,13 @@
+# Dependencias
+node_modules/
+
+# Build de producción (Netlify lo genera en cada deploy)
+dist/
+
+# Archivos temporales / sistema
+*.log
+.DS_Store
+.vite/
+
+# Archivo fuente original de Stitch (14 MB, no necesario en el repo)
+stitch_martha_lavista_landing.zip

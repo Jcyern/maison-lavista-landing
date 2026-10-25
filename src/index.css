@@ -1,0 +1,14 @@
+/* Global reset - Tailwind CDN handles the design system via the config in index.html */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
